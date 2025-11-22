@@ -12,7 +12,7 @@ export default function Home() {
 
   const [remainder , setRemainder] = useState('')
   const [link , setLink] = useState('')
-  const [data, setData] = useState([])
+  const [data, setData] = useState<RemainderType[]>([]);
 
   useEffect(()=>{
     async function fetchdata() {
