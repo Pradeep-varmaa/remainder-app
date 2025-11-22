@@ -70,9 +70,8 @@ export default function Home() {
           {
             data.map((el, index)=>{
               console.log(index)
-              const link = el.Link || ''
               return(
-                <div key={index} className={style.data_subdiv}><p>{index+1}</p> <p>{el.Activity}</p> <a href={link} target='_blank'>LINK</a> <Button onClick={updateStatus}>Complete</Button> </div>
+                <div key={index} className={style.data_subdiv}><p>{index+1}</p> <p>{el.Activity}</p> <a href={el.Link} target='_blank'>LINK</a> <Button onClick={updateStatus}>Complete</Button> </div>
               )
             })
           }
