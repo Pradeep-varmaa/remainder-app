@@ -3,6 +3,11 @@ import { Input , Button, Card} from 'antd';
 import style from './style.module.css'
 import { useState, useEffect, SetStateAction } from 'react';
 
+interface RemainderType {
+  Activity: string;
+  Link: string;
+}
+
 export default function Home() {
 
   const [remainder , setRemainder] = useState('')
